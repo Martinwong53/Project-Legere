@@ -12,3 +12,7 @@ struct NewsView: View {
         Text("Coming Soon!")
     }
 }
+
+#Preview {
+    NewsView()
+}
