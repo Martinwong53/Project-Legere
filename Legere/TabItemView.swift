@@ -30,7 +30,9 @@ struct TabItemView: View {
                 Label("Setting", systemImage: "gear")
             }
             .tag(3)
-        }.accentColor(.red)
+        }
+        .accentColor(.red)
+        
 
         
     }
