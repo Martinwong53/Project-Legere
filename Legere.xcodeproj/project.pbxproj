@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637C22B72B80BF6A000D0C98 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C22B62B80BF6A000D0C98 /* SettingView.swift */; };
 		63FC54CA2B7E739A00668F17 /* LegereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC54C92B7E739A00668F17 /* LegereApp.swift */; };
-		63FC54CC2B7E739A00668F17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC54CB2B7E739A00668F17 /* ContentView.swift */; };
+		63FC54CC2B7E739A00668F17 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC54CB2B7E739A00668F17 /* HomeView.swift */; };
 		63FC54CE2B7E739C00668F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FC54CD2B7E739C00668F17 /* Assets.xcassets */; };
 		63FC54D12B7E739C00668F17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FC54D02B7E739C00668F17 /* Preview Assets.xcassets */; };
 		63FC54DB2B7E739C00668F17 /* LegereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC54DA2B7E739C00668F17 /* LegereTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		637C22B62B80BF6A000D0C98 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		63FC54C62B7E739A00668F17 /* Legere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FC54C92B7E739A00668F17 /* LegereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegereApp.swift; sourceTree = "<group>"; };
-		63FC54CB2B7E739A00668F17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63FC54CB2B7E739A00668F17 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63FC54CD2B7E739C00668F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FC54D02B7E739C00668F17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63FC54D62B7E739C00668F17 /* LegereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				63FC54C92B7E739A00668F17 /* LegereApp.swift */,
-				63FC54CB2B7E739A00668F17 /* ContentView.swift */,
+				63FC54CB2B7E739A00668F17 /* HomeView.swift */,
+				637C22B62B80BF6A000D0C98 /* SettingView.swift */,
 				63FC54CD2B7E739C00668F17 /* Assets.xcassets */,
 				63FC54CF2B7E739C00668F17 /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FC54CC2B7E739A00668F17 /* ContentView.swift in Sources */,
+				637C22B72B80BF6A000D0C98 /* SettingView.swift in Sources */,
+				63FC54CC2B7E739A00668F17 /* HomeView.swift in Sources */,
 				63FC54CA2B7E739A00668F17 /* LegereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +429,14 @@
 				DEVELOPMENT_TEAM = A4647UB7W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Legere;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +461,14 @@
 				DEVELOPMENT_TEAM = A4647UB7W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Legere;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

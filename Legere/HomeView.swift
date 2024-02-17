@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Legere
 //
 //  Created by Martin Wong on 16/2/2024.
@@ -17,7 +17,7 @@ public var screenHeight: CGFloat {
     return UIScreen.main.bounds.height
 }
 
-struct ContentView: View {
+struct HomeView: View {
     
     var body: some View {
         
@@ -34,7 +34,7 @@ struct ContentView: View {
                     .overlay(
                         Image(systemName: "magnifyingglass")
                             .frame(maxWidth: .infinity, alignment: .trailing)
-                            .safeAreaPadding(.horizontal,30)
+                            .padding(.horizontal,30)
                     )
                 
             }
@@ -61,7 +61,7 @@ struct ContentView: View {
                             .overlay(alignment: .topLeading){
                                 Text("Mass Script \nSaturday after Ash Wednesday")
                                     .bold()
-                                    .safeAreaPadding(8)
+                                    .padding(8)
                             }
                             
                         
@@ -89,22 +89,22 @@ struct ContentView: View {
                         
                         Image("PodcastPhoto")
                             .resizable()
-                            .frame(width: 200, height:200, alignment: .center)
+                            .frame(maxWidth: screenWidth/2-19, maxHeight: screenWidth/2-19)
                             .cornerRadius(15)
                             .overlay(alignment: .bottomLeading){
                                 Text("Podcast")
                                     .bold()
-                                    .safeAreaPadding(8)
+                                    .padding(8)
                                 
                             }
                         Image("PopePhoto")
                             .resizable()
-                            .frame(width: 200, height:200, alignment: .center)
+                            .frame(maxWidth: screenWidth/2-19, maxHeight: screenWidth/2-19)
                             .cornerRadius(15)
                             .overlay(alignment: .bottomLeading){
                                 Text("Pope Message")
                                     .bold()
-                                    .safeAreaPadding(8)
+                                    .padding(8)
                                 
                             }
                             
@@ -115,7 +115,7 @@ struct ContentView: View {
                 }
                     
             }
-            .safeAreaPadding(.horizontal)
+            .padding(.horizontal)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         
         }
@@ -168,12 +168,12 @@ struct ContentView: View {
             }
             Spacer()
             
-        }.safeAreaPadding(.vertical)
+        }.padding(.vertical)
         
         
     }
 }
     
 #Preview {
-    ContentView()
+    HomeView()
 }
