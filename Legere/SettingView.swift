@@ -9,7 +9,17 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            Spacer()
+            Text("by Martin Wong")
+                .font(.caption2)
+                .opacity(0.4)
+            Text("Version 1.0.0")
+                .font(.caption2)
+                .opacity(0.4)
+        }.padding()
+        
     }
 }
 

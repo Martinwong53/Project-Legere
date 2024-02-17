@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct TabItemView: View {
+    
+    @State var selectedTab: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView (selection: $selectedTab) {
+            
+            HomeView().tabItem {
+                Label("Home", systemImage: "house")
+            }
+            .tag(0)
+            ReadingView().tabItem {
+                Label("Reading", systemImage: "text.book.closed")
+            }
+            .tag(1)
+            NewsView().tabItem {
+                Label("News", systemImage: "newspaper")
+            }
+            .tag(2)
+            SettingView().tabItem {
+                Label("Setting", systemImage: "gear")
+            }
+            .tag(3)
+        }.accentColor(.red)
+
+        
     }
 }
 

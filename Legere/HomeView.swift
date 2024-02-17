@@ -108,9 +108,6 @@ struct HomeView: View {
                                 
                             }
                             
-                        
-                        
-                        
                     }
                 }
                     
@@ -119,61 +116,10 @@ struct HomeView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         
         }
-        
-        Text("by Martin Wong")
-            .font(.caption2)
-            .opacity(0.4)
-        Text("Version 1.0.0")
-            .font(.caption2)
-            .opacity(0.4)
-        Divider()
-        
-        // Bottom
-        HStack{
-            
-            Spacer()
-            VStack{
-                Image(systemName: "house")
-                Text("Home")
-                    .font(.caption)
-            }
-                
-            Spacer()
-            VStack{
-                Image(systemName: "text.book.closed")
-                Text("Reading")
-                    .font(.caption)
-            }
-            
-            Spacer()
-            VStack{
-                Image(systemName: "calendar")
-                Text("Calendar")
-                    .font(.caption)
-            }
-                
-            Spacer()
-            VStack{
-                Image(systemName: "newspaper")
-                Text("News")
-                    .font(.caption)
-            }
-                
-            Spacer()
-            VStack{
-                Image(systemName: "gear")
-                Text("Setting")
-                    .font(.caption)
-            
-            }
-            Spacer()
-            
-        }.padding(.vertical)
-        
-        
+         
     }
 }
-    
+
 #Preview {
     HomeView()
 }
